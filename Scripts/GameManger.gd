@@ -9,7 +9,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if player_stats.is_in_converstaion:
-		player_stats.conversation_timer -= delta
-	else:
-		player_stats.conversation_timer += delta
-	pass
+		player_stats.conversation_timer -= delta * 10
+	elif player_stats.conversation_timer < 100:
+		player_stats.conversation_timer += delta * 3
+	if player_stats.conversation_timer <= 0:
+		get_tree().quit()

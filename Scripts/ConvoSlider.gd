@@ -8,5 +8,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	scale.x = player_stats.conversation_timer
+	scale.x = player_stats.conversation_timer / 10
 	pass
