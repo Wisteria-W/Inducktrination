@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://d3kgjp71aw6ra"]
+[gd_scene load_steps=5 format=3 uid="uid://d3kgjp71aw6ra"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerMovement.gd" id="1_eqtla"]
-[ext_resource type="Texture2D" uid="uid://bd8cmyjcsg1jr" path="res://icon.svg" id="2_3lcdk"]
 [ext_resource type="SpriteFrames" uid="uid://51uchbnnkf2" path="res://Animations/player.tres" id="2_a61tn"]
 [ext_resource type="Script" path="res://Scripts/PlayerAnimation.gd" id="3_uyv01"]
 
@@ -22,9 +21,5 @@ scale = Vector2(0.0806195, 0.0806195)
 sprite_frames = ExtResource("2_a61tn")
 animation = &"idle"
 script = ExtResource("3_uyv01")
-
-[node name="Icon" type="Sprite2D" parent="."]
-scale = Vector2(0.325, 0.325)
-texture = ExtResource("2_3lcdk")
 
 [node name="Camera2D" type="Camera2D" parent="."]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://7f0acq7mkijg"]
+[gd_scene load_steps=10 format=3 uid="uid://7f0acq7mkijg"]
 
 [ext_resource type="Script" path="res://Scripts/DuckMovement.gd" id="1_uc325"]
-[ext_resource type="Texture2D" uid="uid://bd8cmyjcsg1jr" path="res://icon.svg" id="2_42wn0"]
+[ext_resource type="SpriteFrames" uid="uid://jas7mhhr6u2y" path="res://Animations/duck_small.tres" id="3_6wyvf"]
 [ext_resource type="Script" path="res://Scripts/PlayerDetectionArea.gd" id="3_rduke"]
+[ext_resource type="Script" path="res://Prefabs/DuckAnimation.gd" id="4_86h2c"]
 [ext_resource type="Script" path="res://Scripts/PlayerConversationArea.gd" id="4_mdtei"]
 [ext_resource type="Resource" uid="uid://ba8ay2g77magg" path="res://Dialogues/dlg_test.dialogue" id="5_jv2xv"]
 
@@ -21,10 +22,11 @@ script = ExtResource("1_uc325")
 nav_agent = NodePath("NavigationAgent2D")
 movement_speed = 200.0
 
-[node name="Icon" type="Sprite2D" parent="."]
-self_modulate = Color(1, 0.66, 0.733667, 1)
-scale = Vector2(0.325, 0.325)
-texture = ExtResource("2_42wn0")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.0903447, 0.0903447)
+sprite_frames = ExtResource("3_6wyvf")
+animation = &"walk_angry"
+script = ExtResource("4_86h2c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_sfe1c")

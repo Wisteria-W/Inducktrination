@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://db00lo1fbfw64"]
+[gd_scene load_steps=9 format=3 uid="uid://db00lo1fbfw64"]
 
 [ext_resource type="Script" path="res://Scripts/GameManger.gd" id="1_303n2"]
 [ext_resource type="PackedScene" uid="uid://7f0acq7mkijg" path="res://Prefabs/Duck.tscn" id="1_riuji"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://c0s6l6pafnl7q" path="res://Prefabs/hide_behind.tscn" id="4_ehqn6"]
 [ext_resource type="PackedScene" uid="uid://cyus7rpdgy32p" path="res://Prefabs/DuckUI.tscn" id="5_eimpw"]
 [ext_resource type="PackedScene" uid="uid://wvk80tg56pgi" path="res://Prefabs/SliderUI.tscn" id="7_emwjw"]
-[ext_resource type="TileSet" uid="uid://dss24lwqhbv2a" path="res://tiles.tres" id="8_8mip8"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_vwft8"]
 vertices = PackedVector2Array(1333, 1045, -1400, 836, -1164, -1067, 1227, -1276)
@@ -49,8 +48,3 @@ position = Vector2(-4, 136)
 visible = false
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource("7_emwjw")]
-
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource("8_8mip8")
-format = 2
-layer_0/name = "default"
