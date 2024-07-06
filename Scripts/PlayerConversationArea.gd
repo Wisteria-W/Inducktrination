@@ -14,6 +14,9 @@ func _process(delta):
 
 func body_entered(body):
 	if "Player" in body.get_groups() and !player_stats.Hidden:
-		DialogueManager.show_dialogue_balloon(small_talks.pick_random())
 		player_stats.can_move = false
+		get_parent().get_parent().get_node("CanvasLayer").get_node("DuckUI").visible = true
+		await get_tree().create_timer(3).timeout
+		get_parent().get_parent().get_node("CanvasLayer").get_node("DuckUI").visible = false
+		DialogueManager.show_dialogue_balloon(small_talks.pick_random())
 	pass # Replace with function body.
