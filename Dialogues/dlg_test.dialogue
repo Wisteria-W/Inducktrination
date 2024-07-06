@@ -1,5 +1,4 @@
 ~ this_is_a_node_title
-
 Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
 Nathan: Here are some choices.
 - First one
@@ -9,5 +8,5 @@ Nathan: Here are some choices.
 - Start again => this_is_a_node_title
 - End the conversation => END
 Nathan: For more information see the online documentation.
-
+set PlayerStats.can_move = true
 => END
