@@ -9,6 +9,7 @@ size = Vector2(40, 40)
 [sub_resource type="SpriteFrames" id="SpriteFrames_44bu8"]
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
+collision_mask = 0
 script = ExtResource("1_eqtla")
 movement_slide_speed = 50.0
 

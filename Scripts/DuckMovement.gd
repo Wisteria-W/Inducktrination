@@ -21,6 +21,8 @@ func _physics_process(delta):
 		agro_player()
 	else:
 		random_movement()
+	if player_stats.Hidden:
+		is_agro = false
 	move_and_slide()
 
 func random_movement():

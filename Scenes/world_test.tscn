@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://7f0acq7mkijg" path="res://Prefabs/Duck.tscn" id="1_riuji"]
 [ext_resource type="PackedScene" uid="uid://d3kgjp71aw6ra" path="res://Prefabs/Player.tscn" id="2_5bk1r"]
 [ext_resource type="Texture2D" uid="uid://bd8cmyjcsg1jr" path="res://icon.svg" id="3_6uh1i"]
-[ext_resource type="PackedScene" uid="uid://c0s6l6pafnl7q" path="res://Prefabs/hide_behind.tscn" id="4_ehqn6"]
+[ext_resource type="PackedScene" path="res://Prefabs/hide_behind.tscn" id="4_ehqn6"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_vwft8"]
 vertices = PackedVector2Array(1333, 1045, -1400, 836, -1164, -1067, 1227, -1276)

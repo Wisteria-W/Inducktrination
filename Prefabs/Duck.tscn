@@ -16,6 +16,7 @@ radius = 222.0
 radius = 63.0079
 
 [node name="Duck" type="CharacterBody2D" node_paths=PackedStringArray("nav_agent")]
+collision_mask = 0
 script = ExtResource("1_uc325")
 nav_agent = NodePath("NavigationAgent2D")
 movement_speed = 200.0
