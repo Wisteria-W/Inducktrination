@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://7f0acq7mkijg"]
+[gd_scene load_steps=9 format=3 uid="uid://7f0acq7mkijg"]
 
 [ext_resource type="Script" path="res://Scripts/DuckMovement.gd" id="1_uc325"]
 [ext_resource type="Texture2D" uid="uid://bd8cmyjcsg1jr" path="res://icon.svg" id="2_42wn0"]
 [ext_resource type="Script" path="res://Scripts/PlayerDetectionArea.gd" id="3_rduke"]
 [ext_resource type="Script" path="res://Scripts/PlayerConversationArea.gd" id="4_mdtei"]
+[ext_resource type="Resource" uid="uid://ba8ay2g77magg" path="res://Dialogues/dlg_test.dialogue" id="5_jv2xv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sfe1c"]
 size = Vector2(40, 40)
@@ -42,9 +43,11 @@ debug_color = Color(0.973271, 0, 0.435174, 0.42)
 
 [node name="PlayerConversationArea" type="Area2D" parent="."]
 script = ExtResource("4_mdtei")
+small_talks = Array[Resource("res://addons/dialogue_manager/dialogue_resource.gd")]([ExtResource("5_jv2xv")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConversationArea"]
 shape = SubResource("CircleShape2D_8ue8v")
 debug_color = Color(0, 0.647612, 0.206144, 0.42)
 
 [connection signal="body_entered" from="PlayerDetectionArea" to="PlayerDetectionArea" method="_body_entered"]
+[connection signal="body_entered" from="PlayerConversationArea" to="PlayerConversationArea" method="body_entered"]
