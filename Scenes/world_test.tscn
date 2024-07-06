@@ -13,7 +13,7 @@ source_geometry_group_name = &"navigation_polygon_source_group"
 [node name="Node2D" type="Node2D"]
 
 [node name="Duck" parent="." instance=ExtResource("1_riuji")]
-position = Vector2(158.201, 5.32437)
+position = Vector2(352, 27)
 
 [node name="Player" parent="." instance=ExtResource("2_5bk1r")]
 
