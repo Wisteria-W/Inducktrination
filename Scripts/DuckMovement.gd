@@ -15,10 +15,10 @@ var is_agro : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	nav_agent.target_position = Vector2(position.x + randf_range(-30, 30), position.y + randf_range(-30, 30))
-	x_min = position.x - 100
-	x_max = position.x + 100
-	y_min = position.y - 100
-	y_max = position.y + 100
+	x_min = position.x - 300
+	x_max = position.x + 300
+	y_min = position.y - 300
+	y_max = position.y + 300
 	x_center = position.x 
 	y_center = position.y
 
@@ -40,7 +40,7 @@ func _physics_process(delta):
 
 func random_movement():
 	if position.distance_to(nav_agent.target_position) < 5:
-		var movement_vector = Vector2(position.x + randf_range(-300, 300), position.y + randf_range(-30, 30))
+		var movement_vector = Vector2(position.x + randf_range(-500, 500), position.y + randf_range(-30, 30))
 		if x_max < movement_vector.x : 
 			movement_vector.x = x_center
 		if x_min > movement_vector.x : 
