@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://wvk80tg56pgi"]
+
+[ext_resource type="Script" path="res://Scripts/ConvoSlider.gd" id="1_mo6a1"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_k7e20"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 57.0
+offset_top = 29.0
+offset_right = 97.0
+offset_bottom = 69.0
+scale = Vector2(20.0448, 1)
+texture = SubResource("CanvasTexture_k7e20")
+script = ExtResource("1_mo6a1")
