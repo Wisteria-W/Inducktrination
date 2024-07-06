@@ -1,0 +1,26 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://d0xf4qd4avi0l"]
+
+[ext_resource type="Texture2D" uid="uid://0vcgff7s45p7" path="res://Sprites/GooseA_1.png" id="1_d7v75"]
+[ext_resource type="Texture2D" uid="uid://dnroqhoyw7glb" path="res://Sprites/GooseA_2.png" id="2_73bg8"]
+[ext_resource type="Texture2D" uid="uid://b0ygcw1pgxofi" path="res://Sprites/GooseA_3.png" id="3_a15v3"]
+[ext_resource type="Texture2D" uid="uid://dq6cv6gv0pl7f" path="res://Sprites/GooseA_4.png" id="4_co1rq"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_d7v75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_73bg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_a15v3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_co1rq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]

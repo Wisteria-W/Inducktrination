@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://7f0acq7mkijg" path="res://Prefabs/Duck.tscn" id="1_riuji"]
 [ext_resource type="PackedScene" uid="uid://d3kgjp71aw6ra" path="res://Prefabs/Player.tscn" id="2_5bk1r"]
 [ext_resource type="Texture2D" uid="uid://bd8cmyjcsg1jr" path="res://icon.svg" id="3_6uh1i"]
-[ext_resource type="PackedScene" path="res://Prefabs/hide_behind.tscn" id="4_ehqn6"]
+[ext_resource type="PackedScene" uid="uid://c0s6l6pafnl7q" path="res://Prefabs/hide_behind.tscn" id="4_ehqn6"]
 [ext_resource type="PackedScene" uid="uid://cyus7rpdgy32p" path="res://Prefabs/DuckUI.tscn" id="5_eimpw"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_vwft8"]
