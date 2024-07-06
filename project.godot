@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Inducktrination"
-run/main_scene="res://Prefabs/Player.tscn"
+run/main_scene="res://Scenes/world_test.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+PlayerStats="*res://Scripts/PlayerStats.gd"
 
 [input]
 

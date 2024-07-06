@@ -3,6 +3,8 @@ extends CharacterBody2D
 
 @export var movement_speed = 300.0
 @export var movement_slide_speed = 300.0
+
+@onready var player_stats = get_node("/root/PlayerStats")
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -18,5 +20,5 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, movement_slide_speed)
 		velocity.y = move_toward(velocity.y, 0, movement_slide_speed)
-
+	player_stats.player_position = position
 	move_and_slide()

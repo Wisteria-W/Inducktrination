@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://db00lo1fbfw64"]
+
+[ext_resource type="PackedScene" uid="uid://7f0acq7mkijg" path="res://Prefabs/Duck.tscn" id="1_riuji"]
+[ext_resource type="PackedScene" uid="uid://d3kgjp71aw6ra" path="res://Prefabs/Player.tscn" id="2_5bk1r"]
+[ext_resource type="Texture2D" uid="uid://bd8cmyjcsg1jr" path="res://icon.svg" id="3_6uh1i"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_w51xd"]
+outlines = Array[PackedVector2Array]([PackedVector2Array(-4321, -3142, 7983, -2982, 7967, 6074, -4449, 6202)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_w51xd")
+
+[node name="Duck" parent="." instance=ExtResource("1_riuji")]
+position = Vector2(158.201, 5.32437)
+
+[node name="Player" parent="." instance=ExtResource("2_5bk1r")]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(481, -52)
+texture = ExtResource("3_6uh1i")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(-351, -129)
+texture = ExtResource("3_6uh1i")
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(-235, 234)
+texture = ExtResource("3_6uh1i")
