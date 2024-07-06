@@ -9,6 +9,7 @@ size = Vector2(40, 40)
 [node name="Duck" type="CharacterBody2D" node_paths=PackedStringArray("nav_agent")]
 script = ExtResource("1_uc325")
 nav_agent = NodePath("NavigationAgent2D")
+movement_speed = 200.0
 
 [node name="Icon" type="Sprite2D" parent="."]
 self_modulate = Color(1, 0.66, 0.733667, 1)
@@ -19,3 +20,4 @@ texture = ExtResource("2_42wn0")
 shape = SubResource("RectangleShape2D_sfe1c")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true

@@ -4,14 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://d3kgjp71aw6ra" path="res://Prefabs/Player.tscn" id="2_5bk1r"]
 [ext_resource type="Texture2D" uid="uid://bd8cmyjcsg1jr" path="res://icon.svg" id="3_6uh1i"]
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_w51xd"]
-outlines = Array[PackedVector2Array]([PackedVector2Array(-4321, -3142, 7983, -2982, 7967, 6074, -4449, 6202)])
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_vwft8"]
+vertices = PackedVector2Array(1333, 1045, -1400, 836, -1164, -1067, 1227, -1276)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-1173, -1077, 1237, -1287, 1344, 1056, -1412, 846)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 
 [node name="Node2D" type="Node2D"]
-
-[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-navigation_polygon = SubResource("NavigationPolygon_w51xd")
 
 [node name="Duck" parent="." instance=ExtResource("1_riuji")]
 position = Vector2(158.201, 5.32437)
@@ -29,3 +28,6 @@ texture = ExtResource("3_6uh1i")
 [node name="Icon3" type="Sprite2D" parent="."]
 position = Vector2(-235, 234)
 texture = ExtResource("3_6uh1i")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_vwft8")
