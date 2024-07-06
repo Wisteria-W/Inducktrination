@@ -6,6 +6,7 @@ extends Control
 @onready var credits_button = $MarginContainer/HBoxContainer/VBoxContainer/Credits_Button as Button
 @onready var exit_button = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button as Button
 @onready var start_level = preload("res://Scenes/world_test.tscn") as PackedScene
+@onready var load_credits = preload("res://Main_Menu/credits_menu.tscn") as PackedScene
 
 
 func _ready():
@@ -19,7 +20,7 @@ func on_play_pressed() -> void:
 
 
 func on_credits_pressed() -> void:
-	pass
+	get_tree().change_scene_to_packed(load_credits)
 
 
 func on_exit_pressed() -> void:
