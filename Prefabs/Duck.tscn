@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://7f0acq7mkijg"]
+[gd_scene load_steps=12 format=3 uid="uid://7f0acq7mkijg"]
 
 [ext_resource type="Script" path="res://Scripts/DuckMovement.gd" id="1_uc325"]
 [ext_resource type="SpriteFrames" uid="uid://jas7mhhr6u2y" path="res://Animations/duck_small.tres" id="3_6wyvf"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://Scripts/PlayerConversationArea.gd" id="4_mdtei"]
 [ext_resource type="Resource" uid="uid://c448lfl78uxvd" path="res://Dialogues/dlg_01.dialogue" id="6_4pi7f"]
 [ext_resource type="Resource" uid="uid://cv2n5mj4fi52o" path="res://Dialogues/dlg_02.dialogue" id="7_8jh3l"]
+[ext_resource type="AudioStream" uid="uid://gpk1b2cinu1f" path="res://Sounds/duckscare.wav" id="8_7sowe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sfe1c"]
 size = Vector2(40, 40)
@@ -52,6 +53,9 @@ small_talks = Array[Resource("res://addons/dialogue_manager/dialogue_resource.gd
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConversationArea"]
 shape = SubResource("CircleShape2D_8ue8v")
 debug_color = Color(0, 0.647612, 0.206144, 0.42)
+
+[node name="AudioStream" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_7sowe")
 
 [connection signal="body_entered" from="PlayerDetectionArea" to="PlayerDetectionArea" method="_body_entered"]
 [connection signal="body_entered" from="PlayerConversationArea" to="PlayerConversationArea" method="body_entered"]

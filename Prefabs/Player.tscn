@@ -23,3 +23,6 @@ animation = &"idle"
 script = ExtResource("3_uyv01")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+current = true
