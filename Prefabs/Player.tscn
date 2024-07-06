@@ -1,12 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://d3kgjp71aw6ra"]
+[gd_scene load_steps=6 format=3 uid="uid://d3kgjp71aw6ra"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerMovement.gd" id="1_eqtla"]
 [ext_resource type="Texture2D" uid="uid://bd8cmyjcsg1jr" path="res://icon.svg" id="2_3lcdk"]
+[ext_resource type="SpriteFrames" uid="uid://51uchbnnkf2" path="res://Animations/player.tres" id="2_a61tn"]
+[ext_resource type="Script" path="res://Scripts/PlayerAnimation.gd" id="3_uyv01"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xafmd"]
 size = Vector2(40, 40)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_44bu8"]
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_mask = 0
@@ -17,7 +17,11 @@ movement_slide_speed = 50.0
 shape = SubResource("RectangleShape2D_xafmd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_44bu8")
+position = Vector2(0, -43)
+scale = Vector2(0.0806195, 0.0806195)
+sprite_frames = ExtResource("2_a61tn")
+animation = &"idle"
+script = ExtResource("3_uyv01")
 
 [node name="Icon" type="Sprite2D" parent="."]
 scale = Vector2(0.325, 0.325)
