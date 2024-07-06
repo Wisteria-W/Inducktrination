@@ -54,4 +54,4 @@ HIDE={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogues/dlg_test.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogues/dlg_test.dialogue", "res://Dialogues/dlg_01.dialogue", "res://Dialogues/dlg_02.dialogue")

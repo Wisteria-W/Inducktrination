@@ -1,11 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://7f0acq7mkijg"]
+[gd_scene load_steps=11 format=3 uid="uid://7f0acq7mkijg"]
 
 [ext_resource type="Script" path="res://Scripts/DuckMovement.gd" id="1_uc325"]
 [ext_resource type="SpriteFrames" uid="uid://jas7mhhr6u2y" path="res://Animations/duck_small.tres" id="3_6wyvf"]
 [ext_resource type="Script" path="res://Scripts/PlayerDetectionArea.gd" id="3_rduke"]
 [ext_resource type="Script" path="res://Prefabs/DuckAnimation.gd" id="4_86h2c"]
 [ext_resource type="Script" path="res://Scripts/PlayerConversationArea.gd" id="4_mdtei"]
-[ext_resource type="Resource" uid="uid://ba8ay2g77magg" path="res://Dialogues/dlg_test.dialogue" id="5_jv2xv"]
+[ext_resource type="Resource" uid="uid://c448lfl78uxvd" path="res://Dialogues/dlg_01.dialogue" id="6_4pi7f"]
+[ext_resource type="Resource" uid="uid://cv2n5mj4fi52o" path="res://Dialogues/dlg_02.dialogue" id="7_8jh3l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sfe1c"]
 size = Vector2(40, 40)
@@ -46,7 +47,7 @@ debug_color = Color(0.973271, 0, 0.435174, 0.42)
 
 [node name="PlayerConversationArea" type="Area2D" parent="."]
 script = ExtResource("4_mdtei")
-small_talks = Array[Resource("res://addons/dialogue_manager/dialogue_resource.gd")]([ExtResource("5_jv2xv")])
+small_talks = Array[Resource("res://addons/dialogue_manager/dialogue_resource.gd")]([ExtResource("6_4pi7f"), ExtResource("7_8jh3l")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerConversationArea"]
 shape = SubResource("CircleShape2D_8ue8v")

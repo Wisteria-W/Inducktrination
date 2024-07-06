@@ -1,0 +1,20 @@
+~ Start
+
+Duck: “The weather is really nice today!“
+- Bread
+	Duck: "What? It doesn't make sense to me!".
+	=> Start
+- No
+	Duck: "You're so mean!"
+	=> Start
+- Yes, it is!
+	Duck: "So nice!"
+- I want to cry.
+	Duck: "You're so mean!"
+	=> Start
+- 42
+	Duck: "What? It doesn't make sense to me!".
+	=> Start
+set PlayerStats.can_move = true
+set PlayerStats.is_in_converstaion = false
+=> END

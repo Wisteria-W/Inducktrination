@@ -1,0 +1,21 @@
+~ Start
+
+Duck: “How was your weekend?”
+- I want to cry.
+	Duck: "You're so mean!"
+	=> Start
+- 42
+	Duck: "What? It doesn't make sense to me!".
+	=> Start
+- Bread
+	Duck: "What? It doesn't make sense to me!".
+	=> Start
+- Bad
+	Duck: "You're so mean!"
+	=> Start
+- Great!
+	Duck: "So nice!"
+
+set PlayerStats.can_move = true
+set PlayerStats.is_in_converstaion = false
+=> END
